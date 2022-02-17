@@ -1,0 +1,20 @@
+Function Main
+    Declare Integer N
+    Declare Integer D
+    Declare Integer SUM
+    
+    Assign SUM = 0
+    Input N
+    While N>0
+        Assign D = N%10
+        Assign SUM = SUM+D
+        Assign N = N/10
+    End
+    Output SUM
+    Assign SUM = SUM%3
+    If SUM=0
+        Output "GIVEN NUMBER IS DIVISIBLE BY 3"
+    False:
+        Output "GIVEN NUMBER IS NOT DIVISIBLE BY 3"
+    End
+End

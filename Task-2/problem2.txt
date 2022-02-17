@@ -1,0 +1,16 @@
+Function Main
+    Declare Integer a, b, sum, i, n
+    
+    Assign a = 0
+    Assign b = 1
+    Output "Enter the nth number F(N)"
+    Input n
+    Output a
+    Output b
+    For i = 1 to n-2
+        Assign sum = a+b
+        Output sum
+        Assign a = b
+        Assign b = sum
+    End
+End
